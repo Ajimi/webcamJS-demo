@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Webcam</title>
+	<style type="text/css">
+		.booth	{
+			width: 400px;
+			background-color: #ccc;
+			border: 10px solid #ddd;
+			margin: 0 auto;
+		}
+
+		#results{
+			width : 400px;
+			height: 400px;
+		}
+		.btn-capture{
+			display: block;
+			margin: 10px 0;
+			padding: 10px 20px;
+			background-color: cornflowerblue;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="booth">
+		<div id="my_camera"></div>
+		<a href="#" id="capture" class="btn-capture">Prend photo</a>
+		<div id="results"></div>
+		<a href="#" id="save" class="btn-capture" hidden>Sauvgarder l'image</a>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/webcam.min.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+</html>
